@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <!-- <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon"> -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        
+    </head>
+    <body>
+        <!-- ----------------------Loader------------------------- -->
+        <div id="loader" class="l1">
+            <h1>HELLO</h1>
+            <h1>WELCOME</h1>
+            <h1>TO</h1>
+            <H1>MY</H1>
+            <h1>WORLD</h1>                        
+        </div>
+
+        <!-- ----------------------------Header------------------------ -->
+
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <div class="name">
+                        <h2>PRERNA&nbsp;SHARMA</h2>
+                        <h2>PRERNA&nbsp;SHARMA</h2>
+                    </div>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">My Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <div>
+                        <h1>Hi, I'm<br> <span style="color:#ff004f;font-weight:bolder">Prerna Sharma</span></h1>
+                        <p> Student of bachelor's of computer application</p>
+                    </div>
+                    <img src="images/selfie.jpeg" class="header-img">
+                </div> 
+            </div>
+        </div>
+
+        <!---------------ABOUT------------------>
+        
+        <div id="about">
+            <div>
+                <h1 class="sub-title">About Me</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/p1.jpeg" alt="" width="400px">
+                    </div>
+                    <div class="about-col-2">
+                        <!-- <h1 class="sub-title">About Me</h1> -->
+                        <p id="id1">
+                            Hello! I'm currently pursuing Bachelor's in Computer Applications (BCA), and I'm deeply passionate about exploring the vast realms of technology. With a fervent interest in computer science, I'm committed to expanding my knowledge and skills through my academic journey.
+                            My goal is to leverage my growing expertise to make meaningful contributions to the tech industry while continuously striving for personal and professional growth.
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p><!--2 class names tab-links and active-link are given-->
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>I can make websites through html,css and javascript</li>
+                                <li><span>Python</span><br>I have developed a Voice-Assistant using Python</li>
+                                <li><span>C/C++</span><br>I have made a snakes and ladder game</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>AS OF NOW</span><br>no experience I am a fresher</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019</span><br>10th from The Srijan School with CBSE boards<br>percentage-95%</li>
+                                <li><span>2021</span><br>12th from The Srijan School with CBSE boards<br>percentage-93%</li>
+                                <li><span>2022</span><br>Graducation from Jagannath Community College<br>Rohini sec-3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------MY WORK------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <img src="images/Screenshot 2024-03-30 060734.png" >
+                        <div class="layer">
+                            <h3>C/C++ Projects</h3>
+                            <p>Will show you the links of my all C/C++ projects</p>
+                            <a href="https://github.com/Prerna799/Snakes-and-ladders" target="blank" ><i class="fa fa-solid fa-file"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Screenshot 2024-03-30 061822.png">
+                        <div class="layer">
+                            <h3>Web Development Projects</h3>
+                            <p>Will show you the links of my all web development projects</p>
+                            <a href="#"><i class="fa fa-solid fa-file"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Screenshot 2024-03-30 062327.png" >
+                        <div class="layer">
+                            <h3>Python Projects</h3>
+                            <p>Will show you the links of my all python projects</p>
+                            <a href="https://github.com/Prerna799/Voice-Assistant-Using-Python" target="_blank"><i class="fa fa-solid fa-file"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn">See More</a>
+
+            </div>
+
+        </div>
+
+        <!-- -----------------------------Certification---------------------------- -->
+        <div id="wrapper">
+            <div class="heading">
+                <h1 class="sub-title">Certifications</h1>
+            </div>
+            <div class="slide-share">
+                    <input type="radio" name="slide" id="c1" >
+                    <label for="c1" class="card">
+                        <div class="row1">
+                            <div class="icon"><a href="https://courses.cognitiveclass.ai/certificates/c804fc8eef7b4878987130835a7bb4ca" target="_blank">1</a></div>
+                            <div class="description">
+                                <!-- <h4>something1</h4> -->
+                                <p>Tap on number to see the certificate</p>
+                            </div>
+                        </div>
+                    </label>
+                
+
+                <input type="radio" name="slide" id="c2" >
+                <label for="c2" class="card">
+                    <div class="row1">
+                        <div class="icon"><a href="https://skillshop.exceedlms.com/student/award/RwkYPFh28NzftEwj8x6ZPPfM" target="_blank">2</a></div>
+                        <div class="description">
+                            <!-- <h4>something2</h4> -->
+                            <p>Tap on number to see the certificate</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3" >
+                <label for="c3" class="card">
+                    <div class="row1">
+                        <div class="icon"><a href="https://pdf.ac/3c76g6" target="_blank">3</a></div>
+                        <div class="description">
+                            <!-- <h4>something3</h4> -->
+                            <!-- <p>something to write</p> -->
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4" >
+                <label for="c4" class="card">
+                    <div class="row1">
+                        <div class="icon"><a href="https://pdf.ac/3E5aUG" target="_blank">4</a></div>
+                        <div class="description">
+                            <!-- <h4>something4</h4> -->
+                            <!-- <p>something to write</p> -->
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <!-- ----------------------CONTACT------------------- -->
+
+        <div id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="row">
+                    <div class="contact-left">
+                        <p><i class="fa fa-solid fa-paper-plane"></i>prernasharma0018@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100010314405500" target="blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/p_sharma1006/" target="blank"><i class="fa fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/prerna-sharma-b89a09248/" target="blank"><i class="fa fa-brands fa-linkedin"></i></a>                           
+                        </div>
+                        <a href="images/RESUME.pdf" download class="btn btn2" target="_blank">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>    
+                            <button type="submit" class="btn btn2">Submit</button>                  
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="copyright">
+                 <p>|Copyright © Prerna Sharma|</p>
+            </div>
+        </div>
+
+    <!-- -----------------------JavaScript--------------------------- -->
+
+        <script>
+            //jo click krne pr skills experience education pr ho rha h click wala dikhega and baaki dono hide ho jayenge
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(var i = 0; i < tablinks.length; i++){
+                    tablinks[i].classList.remove("active-links");
+                }
+                for(var i = 0; i < tabcontents.length; i++){
+                    tabcontents[i].classList.remove("active-tab");
+                    if(tabcontents[i].id === tabname){
+                        tabcontents[i].classList.add("active-tab");
+                    }
+                }
+                // Add active class to the clicked tab
+                event.currentTarget.classList.add("active-links");
+            }
+        </script>
+        
+        <!-- connect google sheets when someone will fill the form  -->
+         <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwsMUXGphGsknHKp8ilEo1Wg2mC220lYNWTUl9uM24tjgk6S4FtTFg8v9NLT7f-nBFojQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000) //after 5secs msg will be removed
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+<!-- -------------------------loader script--------------------------- -->
+          <script>
+            var loader = document.querySelector("#loader")
+            setTimeout(function(){
+                loader.style.top = "-100%"
+            },6000)
+          </script>
+
+          <!-- -----------------------menu for small screen-------------------------- -->
+
+           <script>
+                var sidemeu = document.getElementById("sidemenu");
+                function openmenu(){
+                    sidemeu.style.right = "0";
+                }
+                function closemenu(){
+                    sidemeu.style.right = "-200px";
+                }
+           </script>
+
+    </body>
+</html>
